@@ -20,5 +20,23 @@ function getMacAddress() {
         console.log(error);
     }
 }
+function getUserName() {
+    try {
+        const userInfo = os.userInfo();
+        const userName = userInfo.username;
+        return userName
+    } catch (error) {
+        console.log(error);
+    }
+}
 
+function getTimestamp() {
+    try {
+        return Date.now();
+    } catch (error) {
+        console.log(error);
+    }
+}
 console.log(getMacAddress());
+console.log(getUserName());
+console.log(getTimestamp());
