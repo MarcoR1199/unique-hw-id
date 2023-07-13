@@ -1,4 +1,5 @@
 const os = require('os');
+const crypto = require('crypto');
 
 function getMacAddress() {
     try {
@@ -37,6 +38,16 @@ function getTimestamp() {
         console.log(error);
     }
 }
-console.log(getMacAddress());
-console.log(getUserName());
-console.log(getTimestamp());
+
+function generateID() {
+    try {
+        const uniqueString = `${getMacAddress()}${getUserName()}${getTimestamp()}`;
+        const hash = crypto.createHash('sha256');
+        hash.update(uniqueString);
+        return hash.copy().digest('hex');
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+console.log(generateID());
