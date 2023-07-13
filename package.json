@@ -1,0 +1,25 @@
+{
+    "name": "unique-hw-id",
+    "version": "0.0.1",
+    "description": "generate a unique hardwre id",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MarcoR1199/unique-hw-id.git"
+    },
+    "keywords": [
+      "id",
+      "hardware",
+      "unique-id"
+    ],
+    "author": "Marco Rodriguez <marco.rodriguez.rangel@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/MarcoR1199/unique-hw-id/issues"
+    },
+    "homepage": "https://github.com/MarcoR1199/unique-hw-id#readme"
+  }
+  
