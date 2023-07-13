@@ -50,4 +50,6 @@ function generateID() {
     }
 }
 
-console.log(generateID());
+module.exports = {
+    generateID,
+}
